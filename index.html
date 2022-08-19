@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body{
+            margin-left: 20%;
+            margin-right:20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container formulario-div">
+        <h1 class="mt-4 mb-4 text-center">FORMULARIO</h1>
+        <form class="js_form_registar border p-4 bg-primary">
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_name form-control" type="text" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                    <input class="js_lastname form-control" type="text" placeholder="Apellido" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="js_cellphone form-control" type="text" placeholder="Cellphone" required>
+                </div>
+                <div class="col">
+                    <input class="js_photo form-control" type="text" placeholder="photo url" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <textarea class="js_description form-control" rows="5" placeholder="Descripcion" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-success">CREAR USUARIO</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div id="container" class="container row mt-4">
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <form class="js_form_edit border p-4 bg-primary">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar Usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input class="js_id_edit" type="hidden"/>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input class="js_name_edit form-control" type="text" placeholder="Nombre" required>
+                            </div>
+                            <div class="col">
+                                <input class="js_lastname_edit form-control" type="text" placeholder="Apellido" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input class="js_cellphone_edit form-control" type="text" placeholder="Cellphone" required>
+                            </div>
+                            <div class="col">
+                                <input class="js_photo_edit form-control" type="text" placeholder="photo url" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="js_description_edit form-control" rows="5" placeholder="Descripcion" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="js_close btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Editar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./script/main.js"></script>
+</body>
+</html>
